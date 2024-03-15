@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    p {
+        font-family: "Poppins", sans-serif;
+    }
+
+    a {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+    }
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}

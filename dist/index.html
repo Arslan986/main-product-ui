@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome links  -->
+    <script src="https://kit.fontawesome.com/6e76ce4fba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header start here  -->
+
+    <header class="bg-[#FFFFFF] dark:bg-[#0F172A] w-full">
+        <div class="container mx-auto px-4 sm:px-4 md:px-4 lg:px-4 xl:px-4 2xl:px-32">
+            <nav class="flex items-center justify-between bg-[#FFFFFF] dark:bg-[#0F172A] w-full py-4">
+                <button
+                    class="lg:hidden p-2.5 rounded-lg text-neutral-700 dark:text-neutral-300 focus:outline-none flex items-center justify-center"><svg
+                        xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg></button>
+                <a class="ttnc-logo inline-block text-[#4F46E5] flex-shrink-0" href="/">
+                    <svg width="59" height="41" viewBox="0 0 59 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M33.5224 9.69455C34.547 8.66632 35.1818 7.24829 35.1818 5.68181C35.1818 2.54402 32.6378 0 29.5 0C27.516 0 25.7721 1.01857 24.7559 2.55971C24.4868 2.83004 1.8706 30.7044 1.65941 31.0255C0.633591 32.0525 0 33.4705 0 35.037C0 38.1748 2.54281 40.7188 5.6806 40.7188C7.66464 40.7188 9.40853 39.7002 10.4247 38.1591C10.695 37.8888 33.3112 10.0144 33.5224 9.69455Z"
+                            fill="currentColor"></path>
+                        <path
+                            d="M46.6081 22.9203C47.6363 21.8921 48.2723 20.4728 48.2723 18.904C48.2723 15.7662 45.7283 13.2221 42.5905 13.2221C40.6065 13.2221 38.8614 14.2419 37.8452 15.7831C37.5737 16.0558 25.6948 30.6972 25.4824 31.0206C24.4541 32.0489 23.8193 33.4681 23.8193 35.037C23.8193 38.1748 26.3621 40.7188 29.4999 40.7188C31.484 40.7188 33.2291 39.699 34.2452 38.1579C34.5168 37.8851 46.3957 23.2437 46.6081 22.9203Z"
+                            fill="currentColor"></path>
+                        <path
+                            d="M59.0001 5.68181C59.0001 8.81959 56.4573 11.3636 53.3195 11.3636C50.1817 11.3636 47.6377 8.81959 47.6377 5.68181C47.6377 2.54402 50.1817 0 53.3195 0C56.4573 0 59.0001 2.54402 59.0001 5.68181Z"
+                            fill="currentColor"></path>
+                        <path
+                            d="M11.3624 5.68181C11.3624 8.81959 8.81838 11.3636 5.6806 11.3636C2.54281 11.3636 0 8.81959 0 5.68181C0 2.54402 2.54281 0 5.6806 0C8.81838 0 11.3624 2.54402 11.3624 5.68181Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </a>
+                <ul class="lg:flex hidden">
+                    <li>
+                        <a href=""
+                            class="py-2.5 px-4 xl:px-5 leading-[1.25rem] flex items-end hover:bg-[#F1F5F9] hover:rounded-full dark:text-[#CBD5E1] dark:hover:bg-slate-800">
+                            Home <i class="fa-solid fa-angle-down hover:fa-angle-up pl-3"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="py-2.5 px-4 xl:px-5 leading-[1.25rem] flex hover:bg-[#F1F5F9] hover:rounded-full dark:text-[#CBD5E1] dark:hover:bg-slate-800">Home</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="py-2.5 px-4 xl:px-5 leading-[1.25rem] flex hover:bg-[#F1F5F9] hover:rounded-full dark:text-[#CBD5E1] dark:hover:bg-slate-800">Home</a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="flex items-center">
+                        <button onclick="themeControl('darkMode')"
+                            class="self-center text-2xl md:text-3xl w-12 h-12 rounded-full text-[#334155] dark:hidden  dark:text-[#CBD5E1] dark:hover:bg-slate-800 hover:bg-[#F1F5F9]  focus:outline-none flex items-center justify-center ">
+                            <span class="sr-only">Enable dark mode</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true" class="w-7 h-7">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button onclick="themeControl('lightMode')"
+                            class="hidden self-center text-2xl md:text-3xl w-12 h-12 rounded-full text-[#334155] dark:text-[#CBD5E1]  dark:hover:bg-slate-800 hover:bg-[#F1F5F9]  focus:outline-none dark:flex items-center justify-center ">
+                            <span class="sr-only">Enable dark mode</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                aria-hidden="true" class="w-7 h-7">
+                                <path fill-rule="evenodd"
+                                    d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div class="cursor-pointer">
+                            <button
+                                class="flex w-10 h-10 sm:w-12 sm:h-12 rounded-full text-[#334155] dark:text-[#CBD5E1] dark:hover:bg-slate-800 hover:bg-[#F1F5F9] focus:outline-none items-center justify-center"><svg
+                                    width="22" height="22" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M22 22L20 20" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <a class="nc-Button flex-shrink-0 lg:block hidden relative h-auto items-center justify-center rounded-full transition-colors border-transparent bg-[#4338CA] hover:bg-[#4F46E5] text-[#EEF2FF] text-sm sm:text-base font-medium py-3 px-4 sm:px-6   "
+                            href="/login">Sign up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end here  -->
+
+    <!-- hero section start  -->
+    <section class="bg-[#F8F8F8] dark:bg-[#1D2432] pt-20 pb-28">
+        <div class="container mx-auto px-4 sm:px-4 md:px-4 lg:px-4 xl:px-4 2xl:px-32">
+            <div class="flex flex-col lg:flex-row">
+                <div
+                    class="xl:w-[43%] lg:w-[60%] w-full flex flex-col justify-center lg:items-start lg:text-left items-center text-center">
+                    <p
+                        class="xl:text-[48px] lg:text-[2.25rem] text-[2.25rem] lg:leading-tight md:text-[2.25rem] md:leading-[2.75rem] text-[#111827] leading-[60px] font-[600] dark:text-[#F3F4F6]">
+                        Far from face
+                    </p>
+                    <p
+                        class="xl:text-[48px] lg:text-[2.25rem] text-[2.25rem]  lg:leading-tight md:text-[2.25rem] md:leading-[2.75rem] text-[#111827] leading-[60px] font-[600] dark:text-[#F3F4F6]">
+                        but not from
+                        heart
+                    </p>
+                    <p
+                        class="xl:text-[18px] text-[1rem] text-[#111827] leading-[28px] mt-7 lg:pr-20 dark:text-[#9CA3AF] p-0 md:text-[1rem]">
+                        Let stay at
+                        home
+                        and share with everyone
+                        the most beautiful stories in your hometown 🎈</p>
+                    <div>
+                        <a class="nc-Button flex-shrink-0 relative h-auto mt-7 inline-flex items-center justify-center rounded-full transition-colors border-transparent bg-[#4338CA] hover:bg-[#4F46E5] text-[#EEF2FF] text-sm sm:text-base font-medium py-3 px-4 sm:px-6   "
+                            href="/login">Getting started</a>
+                    </div>
+                </div>
+                <div class="xl:w-[57%] lg:w-[40%] w-full flex items-center lg:m-0 my-14">
+                    <img src="https://ncmaz-nextjs.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-right.a04e2be1.png&w=1920&q=75"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section end  -->
+
+    <!-- top trending topic section start  -->
+    <section class="bg-[#F8F8F8] dark:bg-[#1D2432]">
+        <div class="container mx-auto px-4 sm:px-4 md:px-4 lg:px-4 xl:px-4 2xl:px-32">
+            <div class="pb-12">
+                <p class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#111827] dark:text-[#F3F4F6]">
+                    Top trending topics</p>
+                <p class="xl:text-[18px] text-[1rem] leading-7 text-[#6B7280] mt-3 dark:text-[#9CA3AF]">
+                    Discover over 100
+                    topics</p>
+            </div>
+            <div class="grid md:gap-6 gap-4 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2">
+                <div class="bg-white dark:bg-[#111827]  flex flex-col items-center justify-center rounded-3xl p-6">
+                    <img src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1533090161767-e6ffed986c88%3Fixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D550%26q%3D80&w=96&q=75"
+                        class="h-20 w-20 rounded-full" alt="">
+                    <div class="mt-3">
+                        <h2 class="text-base font-semibold text-[#111827] text-center dark:text-neutral-100">Garden</h2>
+                        <span class="block mt-1 text-sm text-[#6B7280] dark:text-neutral-400">13 Articles</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-[#111827]  flex flex-col items-center justify-center rounded-3xl p-6">
+                    <img src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1485841890310-6a055c88698a%3Fixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D550%26q%3D80&w=96&q=75"
+                        class="h-20 w-20 rounded-full" alt="">
+                    <div class="mt-3">
+                        <h2 class="text-base font-semibold text-[#111827] text-center dark:text-neutral-100">Jewellery
+                        </h2>
+                        <span class="block mt-1 text-sm text-[#6B7280] dark:text-neutral-400">16 Articles</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-[#111827]  flex flex-col items-center justify-center rounded-3xl p-6">
+                    <img src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1459411552884-841db9b3cc2a%3Fixlib%3Drb-1.2.1%26ixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto%3Dformat%26fit%3Dcrop%26w%3D500%26q%3D80&w=96&q=75"
+                        class="h-20 w-20 rounded-full" alt="">
+                    <div class="mt-3">
+                        <h2 class="text-base font-semibold text-[#111827] text-center dark:text-neutral-100">Industrial
+                        </h2>
+                        <span class="block mt-1 text-sm text-[#6B7280] dark:text-neutral-400">15 Articles</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-[#111827]  flex flex-col items-center justify-center rounded-3xl p-6">
+                    <img src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1491406213019-05b162a72c20%3Fixlib%3Drb-1.2.1%26ixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto%3Dformat%26fit%3Dcrop%26w%3D500%26q%3D80&w=96&q=75"
+                        class="h-20 w-20 rounded-full" alt="">
+                    <div class="mt-3">
+                        <h2 class="text-base font-semibold text-[#111827] text-center dark:text-neutral-100">Tools</h2>
+                        <span class="block mt-1 text-sm text-[#6B7280] dark:text-neutral-400">21 Articles</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-[#111827]  flex flex-col items-center justify-center rounded-3xl p-6">
+                    <img src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1528297506728-9533d2ac3fa4%3Fixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D500%26q%3D80&w=96&q=75"
+                        class="h-20 w-20 rounded-full" alt="">
+                    <div class="mt-3">
+                        <h2 class="text-base font-semibold text-[#111827] text-center dark:text-neutral-100">Automative
+                        </h2>
+                        <span class="block mt-1 text-sm text-[#6B7280] dark:text-neutral-400">16 Articles</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-[#111827]  flex flex-col items-center justify-center rounded-3xl p-6">
+                    <img src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1533090161767-e6ffed986c88%3Fixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D550%26q%3D80&w=96&q=75"
+                        class="h-20 w-20 rounded-full" alt="">
+                    <div class="mt-3">
+                        <h2 class="text-base font-semibold text-[#111827] text-center dark:text-neutral-100">Garden</h2>
+                        <span class="block mt-1 text-sm text-[#6B7280] dark:text-neutral-400">13 Articles</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-[#111827]  flex flex-col items-center justify-center rounded-3xl p-6">
+                    <img src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1485841890310-6a055c88698a%3Fixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D550%26q%3D80&w=96&q=75"
+                        class="h-20 w-20 rounded-full" alt="">
+                    <div class="mt-3">
+                        <h2 class="text-base font-semibold text-[#111827] text-center dark:text-neutral-100">Jewellery
+                        </h2>
+                        <span class="block mt-1 text-sm text-[#6B7280] dark:text-neutral-400">16 Articles</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-[#111827]  flex flex-col items-center justify-center rounded-3xl p-6">
+                    <img src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1459411552884-841db9b3cc2a%3Fixlib%3Drb-1.2.1%26ixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto%3Dformat%26fit%3Dcrop%26w%3D500%26q%3D80&w=96&q=75"
+                        class="h-20 w-20 rounded-full" alt="">
+                    <div class="mt-3">
+                        <h2 class="text-base font-semibold text-[#111827] text-center dark:text-neutral-100">Industrial
+                        </h2>
+                        <span class="block mt-1 text-sm text-[#6B7280] dark:text-neutral-400">15 Articles</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-[#111827]  flex flex-col items-center justify-center rounded-3xl p-6">
+                    <img src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1491406213019-05b162a72c20%3Fixlib%3Drb-1.2.1%26ixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto%3Dformat%26fit%3Dcrop%26w%3D500%26q%3D80&w=96&q=75"
+                        class="h-20 w-20 rounded-full" alt="">
+                    <div class="mt-3">
+                        <h2 class="text-base font-semibold text-[#111827] text-center dark:text-neutral-100">Tools</h2>
+                        <span class="block mt-1 text-sm text-[#6B7280] dark:text-neutral-400">21 Articles</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-[#111827]  flex flex-col items-center justify-center rounded-3xl p-6">
+                    <img src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1528297506728-9533d2ac3fa4%3Fixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D500%26q%3D80&w=96&q=75"
+                        class="h-20 w-20 rounded-full" alt="">
+                    <div class="mt-3">
+                        <h2 class="text-base font-semibold text-[#111827] text-center dark:text-neutral-100">Automative
+                        </h2>
+                        <span class="block mt-1 text-sm text-[#6B7280] dark:text-neutral-400">16 Articles</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top trending topic section end -->
+
+    <!-- editor picks section start  -->
+    <section class="rounded dark:bg-[#171D28] bg-[#F3F4F6]">
+        <div class="container mx-auto px-4 sm:px-4 md:px-4 lg:px-4 xl:px-4 2xl:px-32">
+            <div class="pb-12">
+                <p class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#111827] dark:text-[#F3F4F6]">
+                    🧩 Editor Picks</p>
+                <p class="xl:text-[18px] text-[1rem] leading-7 text-[#6B7280] mt-3 dark:text-[#9CA3AF]">
+                    Discover the most outstanding articles in all topics of life.
+                </p>
+            </div>
+            <div class="w-full">
+                <div class="tabs flex ">
+                    <button data-target="panel-1"
+                        class="tab active py-3 px-6 dark:bg-[#F3F4F6] bg-[#171D28] rounded-full text-sm dark:text-[#000000] text-[#F9FAF8] font-medium leading-6 capitalize">
+                        All items
+                    </button>
+                    <button data-target="panel-2"
+                        class="tab py-3 ml-2 px-6  rounded-full text-sm dark:text-[#9CA3AF] text-[#6B7280] font-medium leading-6 capitalize">
+                        Garden
+                    </button>
+                    <button data-target="panel-3"
+                        class="tab py-3 px-6 ml-2  rounded-full text-sm dark:text-[#9CA3AF] text-[#6B7280] font-medium leading-6 capitalize">
+                        Fitness
+                    </button>
+                    <button data-target="panel-4"
+                        class="tab py-3 px-6 ml-2 rounded-full text-sm dark:text-[#9CA3AF] text-[#6B7280] font-medium leading-6 capitalize">
+                        Design
+                    </button>
+                </div>
+            </div>
+
+            <div id="panels">
+                <div class="panel-1 tab-content active py-5">
+                    <span class="mr-5">
+                        <i class="fal fa-bed mr-1"></i> {{ entry.bedrooms }}
+                    </span>
+                    <span>
+                        <i class="fal fa-bath mr-1"></i> {{ entry.bathrooms }}
+                    </span>
+
+                    {{ entry.body }}
+                </div>
+                <div class="panel-2 tab-content py-5">
+                    Map here
+                </div>
+                <div class="panel-3 tab-content py-5">
+                    other info
+                </div>
+                <div class="panel-4 tab-content py-5">
+                    other
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- editor picks section end  -->
+
+    <!-- js files here  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
